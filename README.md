@@ -9,15 +9,15 @@ Aurora Intelligent Adjustment Mapping Reporting, designed for measurement engine
 This project is developed in 2013, if you just want the code and run, I'm sorry you maybe disappointed. Cause some SDKs(Access Engine, and Crystal Report SDK) are losted, you need to find yourself. But I'll release the install package. If you find the SDK, the you can successfully run and build.
 
 # Install
-I released x86 and x64 version, you can go [here]() to download.
+I released x86 and x64 version, you can go [here](https://github.com/hupo376787/Aurora_Intelligent_Adjustment_Mapping_Reporting/releases) to download.
 
 # Register
-See[Register machine]()
+See[Register machine](https://github.com/hupo376787/Aurora_Intelligent_Adjustment_Mapping_Reporting/tree/master/RegAurora)
 You can only use this software for 10 days by default.
 But now I released the register machine, so you can register as you want. Or you can change the source code to skip register.
 
 # Reset Register
-You can also reset register, see [Reset]().
+You can also reset register, see [Reset](https://github.com/hupo376787/Aurora_Intelligent_Adjustment_Mapping_Reporting/tree/master/ResetAurora).
 
 # Sample data
 You can find the sample data in your install folder, usually it's located in `C:\Program Files\Aurora\SampleData`, or `C:\Program Files (x86)\Aurora\SampleData`.
