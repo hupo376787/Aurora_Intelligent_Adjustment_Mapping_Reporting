@@ -7,7 +7,7 @@ Aurora 智能平差 | 绘图 | 报表，专为测量相关人员设计。
 
 # 注意!!! 本源代码遵循Apache License 2.0开源协议，你可以在这里了解更多本协议[here](https://github.com/hupo376787/Aurora_Intelligent_Adjustment_Mapping_Reporting/blob/master/LICENSE).
 
-本项目在2013年研发，如果你想直接拿来源代码直接编译并且运行，那么你可能会失望。因为一些SDK（Access Engine, and Crystal Report SDK）丢失，不过你可以在网上找到对应的SDK开发包。但是我会放出原件最终安装包。如果你能找到那些SDK，那么你就可以正常编译并运行。有什么不懂得请开[Issue](https://github.com/hupo376787/Aurora_Intelligent_Adjustment_Mapping_Reporting/issues)。
+本项目在2013年研发，并且接下来得一年我也在开发她。如果你想直接拿来源代码直接编译并且运行，那么你可能会失望。因为一些SDK（Access Engine, and Crystal Report SDK）丢失，不过你可以在网上找到对应的SDK开发包。但是我会放出原件最终安装包。如果你能找到那些SDK，那么你就可以正常编译并运行。有什么不懂得请开[Issue](https://github.com/hupo376787/Aurora_Intelligent_Adjustment_Mapping_Reporting/issues)。
 
 # 安装
 我提供x86 和 x64 版本，你可以在这 [here](https://github.com/hupo376787/Aurora_Intelligent_Adjustment_Mapping_Reporting/releases) 来下载。
