@@ -1,0 +1,1133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CAB47FE1-68D8-41F5-95A9-F91C152F2263}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adjustment</RootNamespace>
+    <AssemblyName>Aurora</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\hupo\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.1.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9CACC8B1686D8525F4951A36A67F2F2B2E1C41FE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Adjustment_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Aurora.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Aurora\Adjustment\bin\Release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutAurora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutAurora.Designer.cs">
+      <DependentUpon>AboutAurora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuroraMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuroraMain.Designer.cs">
+      <DependentUpon>AuroraMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuroraReport\AnnexedLeveling_Chs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnnexedLeveling_Chs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\AnnexedLeveling_Cht.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnnexedLeveling_Cht.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\AnnexedLeveling_En.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnnexedLeveling_En.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\ClosedLeveling_Chs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClosedLeveling_Chs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\ClosedLeveling_Cht.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClosedLeveling_Cht.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\ClosedLeveling_En.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClosedLeveling_En.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\ClosedTraverseWithOuterPoint_Chs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClosedTraverseWithOuterPoint_Chs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\ClosedTraverseWithOuterPoint_Cht.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClosedTraverseWithOuterPoint_Cht.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\ClosedTraverseWithOuterPoint_En.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClosedTraverseWithOuterPoint_En.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\ClosedTraverse_Chs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClosedTraverse_Chs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\ClosedTraverse_Cht.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClosedTraverse_Cht.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\ClosedTraverse_En.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClosedTraverse_En.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\LevelingNetwork_Chs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LevelingNetwork_Chs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\LevelingNetwork_Cht.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LevelingNetwork_Cht.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\LevelingNetwork_En.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LevelingNetwork_En.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\NoAngleConnTraverse_Chs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NoAngleConnTraverse_Chs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\NoAngleConnTraverse_Cht.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NoAngleConnTraverse_Cht.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\NoAngleConnTraverse_En.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NoAngleConnTraverse_En.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\OneAngleConnTraverse_Chs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OneAngleConnTraverse_Chs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\OneAngleConnTraverse_Cht.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OneAngleConnTraverse_Cht.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\OneAngleConnTraverse_En.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OneAngleConnTraverse_En.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\OpenTraverse_Chs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OpenTraverse_Chs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\OpenTraverse_Cht.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OpenTraverse_Cht.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\OpenTraverse_En.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OpenTraverse_En.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\SpurLeveling_Chs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpurLeveling_Chs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\SpurLeveling_Cht.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpurLeveling_Cht.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\SpurLeveling_En.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpurLeveling_En.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\TwoAngleConnTraverse_Chs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TwoAngleConnTraverse_Chs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\TwoAngleConnTraverse_Cht.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TwoAngleConnTraverse_Cht.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AuroraReport\TwoAngleConnTraverse_En.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TwoAngleConnTraverse_En.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AutoClosingMessageBox.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Donate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donate.Designer.cs">
+      <DependentUpon>Donate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedBack.Designer.cs">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelingNetworkSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelingNetworkSettings.Designer.cs">
+      <DependentUpon>LevelingNetworkSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Locker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locker.Designer.cs">
+      <DependentUpon>Locker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LockerPsd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LockerPsd.Designer.cs">
+      <DependentUpon>LockerPsd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LockerSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LockerSetup.Designer.cs">
+      <DependentUpon>LockerSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mail.Designer.cs">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapSetting.Designer.cs">
+      <DependentUpon>MapSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySuperConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MySuperConsole.Designer.cs">
+      <DependentUpon>MySuperConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFunction.Designer.cs">
+      <DependentUpon>NewFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressBar.Designer.cs">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicClass.cs" />
+    <Compile Include="ReadMind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadMind.Designer.cs">
+      <DependentUpon>ReadMind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterAurora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterAurora.Designer.cs">
+      <DependentUpon>RegisterAurora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCmd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyCmd.Designer.cs">
+      <DependentUpon>MyCmd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acknowledgement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acknowledgement.Designer.cs">
+      <DependentUpon>Acknowledgement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeLevel.Designer.cs">
+      <DependentUpon>TimeLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaveEffects.cs" />
+    <EmbeddedResource Include="AboutAurora.en.resx">
+      <DependentUpon>AboutAurora.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutAurora.resx">
+      <DependentUpon>AboutAurora.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutAurora.zh-Hant.resx">
+      <DependentUpon>AboutAurora.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraMain.en.resx">
+      <DependentUpon>AuroraMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraMain.resx">
+      <DependentUpon>AuroraMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraMain.zh-Hant.resx">
+      <DependentUpon>AuroraMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\AnnexedLeveling_Chs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AnnexedLeveling_Chs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\AnnexedLeveling_Cht.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AnnexedLeveling_Cht.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\AnnexedLeveling_En.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AnnexedLeveling_En.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\ClosedLeveling_Chs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClosedLeveling_Chs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\ClosedLeveling_Cht.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClosedLeveling_Cht.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\ClosedLeveling_En.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClosedLeveling_En.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\ClosedTraverseWithOuterPoint_Chs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClosedTraverseWithOuterPoint_Chs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\ClosedTraverseWithOuterPoint_Cht.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClosedTraverseWithOuterPoint_Cht.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\ClosedTraverseWithOuterPoint_En.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClosedTraverseWithOuterPoint_En.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\ClosedTraverse_Chs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClosedTraverse_Chs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\ClosedTraverse_Cht.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClosedTraverse_Cht.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\ClosedTraverse_En.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClosedTraverse_En.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\LevelingNetwork_Chs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LevelingNetwork_Chs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\LevelingNetwork_Cht.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LevelingNetwork_Cht.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\LevelingNetwork_En.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LevelingNetwork_En.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\NoAngleConnTraverse_Chs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NoAngleConnTraverse_Chs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\NoAngleConnTraverse_Cht.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NoAngleConnTraverse_Cht.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\NoAngleConnTraverse_En.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NoAngleConnTraverse_En.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\OneAngleConnTraverse_Chs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OneAngleConnTraverse_Chs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\OneAngleConnTraverse_Cht.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OneAngleConnTraverse_Cht.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\OneAngleConnTraverse_En.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OneAngleConnTraverse_En.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\OpenTraverse_Chs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OpenTraverse_Chs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\OpenTraverse_Cht.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OpenTraverse_Cht.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\OpenTraverse_En.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OpenTraverse_En.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\SpurLeveling_Chs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SpurLeveling_Chs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\SpurLeveling_Cht.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SpurLeveling_Cht.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\SpurLeveling_En.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SpurLeveling_En.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\TwoAngleConnTraverse_Chs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TwoAngleConnTraverse_Chs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\TwoAngleConnTraverse_Cht.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TwoAngleConnTraverse_Cht.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuroraReport\TwoAngleConnTraverse_En.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TwoAngleConnTraverse_En.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donate.en.resx">
+      <DependentUpon>Donate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donate.resx">
+      <DependentUpon>Donate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donate.zh-Hant.resx">
+      <DependentUpon>Donate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedBack.resx">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelingNetworkSettings.en.resx">
+      <DependentUpon>LevelingNetworkSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelingNetworkSettings.resx">
+      <DependentUpon>LevelingNetworkSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelingNetworkSettings.zh-Hant.resx">
+      <DependentUpon>LevelingNetworkSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locker.en.resx">
+      <DependentUpon>Locker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locker.resx">
+      <DependentUpon>Locker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locker.zh-Hant.resx">
+      <DependentUpon>Locker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LockerPsd.en.resx">
+      <DependentUpon>LockerPsd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LockerPsd.resx">
+      <DependentUpon>LockerPsd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LockerPsd.zh-Hant.resx">
+      <DependentUpon>LockerPsd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LockerSetup.en.resx">
+      <DependentUpon>LockerSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LockerSetup.resx">
+      <DependentUpon>LockerSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LockerSetup.zh-Hant.resx">
+      <DependentUpon>LockerSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mail.en.resx">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mail.resx">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mail.zh-Hant.resx">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapSetting.en.resx">
+      <DependentUpon>MapSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapSetting.resx">
+      <DependentUpon>MapSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapSetting.zh-Hant.resx">
+      <DependentUpon>MapSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCmd.en.resx">
+      <DependentUpon>MyCmd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCmd.zh-Hant.resx">
+      <DependentUpon>MyCmd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MySuperConsole.resx">
+      <DependentUpon>MySuperConsole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFunction.resx">
+      <DependentUpon>NewFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBar.en.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBar.zh-Hant.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadMind.en.resx">
+      <DependentUpon>ReadMind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadMind.resx">
+      <DependentUpon>ReadMind.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadMind.zh-Hant.resx">
+      <DependentUpon>ReadMind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterAurora.en.resx">
+      <DependentUpon>RegisterAurora.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterAurora.resx">
+      <DependentUpon>RegisterAurora.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterAurora.zh-Hant.resx">
+      <DependentUpon>RegisterAurora.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting.en.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting.zh-Hant.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCmd.resx">
+      <DependentUpon>MyCmd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acknowledgement.resx">
+      <DependentUpon>Acknowledgement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeLevel.resx">
+      <DependentUpon>TimeLevel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Adjustment_TemporaryKey.pfx" />
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aurora.ico" />
+    <None Include="Resources\FeedBack_16.png" />
+    <None Include="Resources\Algorithm_16.png" />
+    <None Include="Resources\OleasterFruit.png" />
+    <None Include="Resources\Thanks_128.png" />
+    <None Include="Resources\Thanks_32.png" />
+    <None Include="Resources\Thanks_24.png" />
+    <None Include="Resources\Thanks_16.png" />
+    <None Include="Resources\BackGround.jpg" />
+    <None Include="Resources\NewFunction_128.png" />
+    <None Include="Resources\NewFunction_32.png" />
+    <None Include="Resources\NewFunction_24.png" />
+    <None Include="Resources\NewFunction_16.png" />
+    <None Include="Resources\CloseDown.png" />
+    <None Include="Resources\Zoom_Report_24.png" />
+    <None Include="Resources\Zoom_Report_16.png" />
+    <None Include="Resources\Refresh_Report_24.png" />
+    <None Include="Resources\Refresh_Report_16.png" />
+    <None Include="Resources\Print_Report_24.png" />
+    <None Include="Resources\Print_Report_16.png" />
+    <None Include="Resources\Export_Report_24.png" />
+    <None Include="Resources\Export_Report_16.png" />
+    <None Include="Resources\ZoomOut_32.png" />
+    <None Include="Resources\ZoomOut_24.png" />
+    <None Include="Resources\ZoomOut_16.png" />
+    <None Include="Resources\ZoomIn_32.png" />
+    <None Include="Resources\ZoomIn_24.png" />
+    <None Include="Resources\ZoomIn_16.png" />
+    <None Include="Resources\ViewText_32.png" />
+    <None Include="Resources\ViewText_24.png" />
+    <None Include="Resources\ViewText_16.png" />
+    <None Include="Resources\Pan_32.png" />
+    <None Include="Resources\Pan_24.png" />
+    <None Include="Resources\Pan_16.png" />
+    <None Include="Resources\ImageExport_32.png" />
+    <None Include="Resources\ImageExport_24.png" />
+    <None Include="Resources\ImageExport_16.png" />
+    <None Include="Resources\ImageCopy_32.png" />
+    <None Include="Resources\ImageCopy_24.png" />
+    <None Include="Resources\ImageCopy_16.png" />
+    <None Include="Resources\FullExtent_32.png" />
+    <None Include="Resources\FullExtent_24.png" />
+    <None Include="Resources\FullExtent_16.png" />
+    <None Include="Resources\DrawLine_32.png" />
+    <None Include="Resources\DrawLine_24.png" />
+    <None Include="Resources\DrawLine_16.png" />
+    <None Include="Resources\ButtonBKG1.png" />
+    <None Include="Resources\ButtonBKG.png" />
+    <None Include="Resources\Donate_BKG.png" />
+    <None Include="Resources\Law.png" />
+    <None Include="Resources\ReadMind_24.png" />
+    <None Include="Resources\Mail.png" />
+    <None Include="Resources\Mail_32.png" />
+    <None Include="Resources\Mail_24.png" />
+    <None Include="Resources\Mail_16.png" />
+    <None Include="Resources\MyCmd_32.png" />
+    <None Include="Resources\MyCmd_24.png" />
+    <None Include="Resources\MyCmd_16.png" />
+    <None Include="Resources\Donate_32.png" />
+    <None Include="Resources\Donate_24.png" />
+    <None Include="Resources\Donate_16.png" />
+    <None Include="Resources\Register_32.png" />
+    <None Include="Resources\Register_24.png" />
+    <None Include="Resources\Register_16.png" />
+    <None Include="Resources\Import_32.png" />
+    <None Include="Resources\Import_24.png" />
+    <None Include="Resources\Import_16.png" />
+    <None Include="Resources\Export_32.png" />
+    <None Include="Resources\Export_24.png" />
+    <None Include="Resources\Export_16.png" />
+    <None Include="Resources\NewAdjust_32.png" />
+    <None Include="Resources\NewAdjust_24.png" />
+    <None Include="Resources\NewAdjust_16.png" />
+    <None Include="Resources\ExitAurora_32.png" />
+    <None Include="Resources\ExitAurora_24.png" />
+    <None Include="Resources\ExitAurora_16.png" />
+    <None Include="Resources\Help_32.png" />
+    <None Include="Resources\Help_24.png" />
+    <None Include="Resources\Help_16.png" />
+    <None Include="Resources\Donate_Qinqin.png" />
+    <None Include="Resources\Donate_Kelian.png" />
+    <None Include="Resources\Yizhiliusha.png" />
+    <None Include="Resources\Locker.png" />
+    <None Include="Resources\Locker_32.png" />
+    <None Include="Resources\Locker_24.png" />
+    <None Include="Resources\Locker_16.png" />
+    <None Include="Resources\Wrong.png" />
+    <None Include="Resources\Right.png" />
+    <None Include="Resources\CmdClear_16.png" />
+    <None Include="Resources\CmdPaste_16.png" />
+    <None Include="Resources\CmdEnter_16.png" />
+    <None Include="Resources\CmdCut_16.png" />
+    <None Include="Resources\CmdCopy_16.png" />
+    <None Include="Resources\Levle_Indicator.gif" />
+    <None Include="Resources\Lvl_Sun_16.png" />
+    <None Include="Resources\Lvl_Star_16.png" />
+    <None Include="Resources\Lvl_Moon_16.png" />
+    <None Include="Resources\Msg_16.png" />
+    <None Include="Resources\Mouse.png" />
+    <None Include="Resources\Size.png" />
+    <None Include="Resources\TotalRunTime.gif" />
+    <None Include="Resources\Winver_24.png" />
+    <None Include="Resources\ExitAbout_24.png" />
+    <None Include="Resources\Msinfo_24.png" />
+    <None Include="Resources\Iexplore_24.png" />
+    <None Include="Resources\Weibo_24.png" />
+    <None Include="Resources\Resmon_24.png" />
+    <None Include="Resources\Perfmon_24.png" />
+    <None Include="Resources\Dxdiag_24.png" />
+    <None Include="Resources\Splash.png" />
+    <None Include="Resources\CloseHover.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\SuperConsole.png" />
+    <None Include="Aurora.png" />
+    <None Include="Resources\Mapping_32.png" />
+    <None Include="Resources\Mapping_24.png" />
+    <None Include="Resources\Mapping_16.png" />
+    <None Include="Resources\Setup_24.png" />
+    <None Include="Resources\Report_24.png" />
+    <None Include="Resources\Delete_24.png" />
+    <None Include="Resources\Clear_24.png" />
+    <None Include="Resources\Calc_24.png" />
+    <None Include="Resources\Add_24.png" />
+    <None Include="Resources\About_24.png" />
+    <None Include="Resources\Setup_32.png" />
+    <None Include="Resources\Setup_16.png" />
+    <None Include="Resources\Report_32.png" />
+    <None Include="Resources\Report_16.png" />
+    <None Include="Resources\Delete_32.png" />
+    <None Include="Resources\Delete_16.png" />
+    <None Include="Resources\Clear_32.png" />
+    <None Include="Resources\Clear_16.png" />
+    <None Include="Resources\Calc_32.png" />
+    <None Include="Resources\Calc_16.png" />
+    <None Include="Resources\Add_32.png" />
+    <None Include="Resources\Add_16.png" />
+    <None Include="Resources\About_32.png" />
+    <None Include="Resources\About_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="CrystalActiveXReportViewerLib13">
+      <Guid>{B816E96D-D151-4000-BADB-53A2D8F3FC65}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportViewerWebReportSourceLib">
+      <Guid>{14173BA7-071D-4216-8C9B-EAB29A55E2D4}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+2013.11.20，Adjustment文件夹正式更名为Aurora，解决方案仍为Adjustment。
