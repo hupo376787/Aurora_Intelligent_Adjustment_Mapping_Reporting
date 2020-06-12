@@ -11,6 +11,14 @@ This project is developed in 2013, if you just want the code and run, I'm sorry 
 # Install
 I released x86 and x64 version, you can go [here]() to download.
 
+# Register
+See[Register machine]()
+You can only use this software for 10 days by default.
+But now I released the register machine, so you can register as you want. Or you can change the source code to skip register.
+
+# Reset Register
+You can also reset register, see [Reset]().
+
 # Sample data
 You can find the sample data in your install folder, usually it's located in `C:\Program Files\Aurora\SampleData`, or `C:\Program Files (x86)\Aurora\SampleData`.
 
